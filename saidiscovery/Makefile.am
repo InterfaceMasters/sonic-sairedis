@@ -11,7 +11,7 @@ endif
 if SAIVS
 SAILIB=-L$(top_srcdir)/vslib/src/.libs -lsaivs
 else
-SAILIB=-lsai
+SAILIB=/opt/bfn/install/lib/libdriver.so -L/opt/bfn/install/lib -lsai
 endif
 
 saidiscovery_SOURCES = saidiscovery.cpp
